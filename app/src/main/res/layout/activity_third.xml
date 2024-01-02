@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ThirdActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Evaluate the metrics "
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="6">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Precision"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Precision"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Recall"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint=" Recall"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="F-Score"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="F-Score"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Accurate"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/accu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Accurate"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+
+        <Button
+            android:id="@+id/submitpr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predict" />
+
+        <Button
+            android:id="@+id/clearpr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+    </GridLayout>
+
+
+
+</LinearLayout>

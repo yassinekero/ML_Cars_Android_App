@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Car Specification"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:layout_below="@id/textViewTitle">
+
+
+        <TextView
+            android:id="@+id/textViewMpg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Mpg"
+            android:textSize="20sp" />
+
+        <!-- EditText pour "Mpg" -->
+        <EditText
+            android:id="@+id/mpg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Miles Per Gallon"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- TextView et EditText pour "Displacement" -->
+        <TextView
+            android:id="@+id/textViewDisplacement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Displacement"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/disp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Displacement"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Weight"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Weight"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Horsepower"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint=" Horsepower"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:text="ML Algorithm" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:text="Clear" />
+
+        <TextView
+            android:id="@+id/textViewAcceleration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Acceleration"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Acceleration"
+            android:inputType="number"
+            android:minHeight="48dp" />
+    </GridLayout>
+
+</RelativeLayout>
+

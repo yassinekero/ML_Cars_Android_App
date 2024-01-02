@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="ML Algorithm "
+        android:textSize="25sp"
+        android:gravity="center" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/knn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KNN" />
+        <EditText
+            android:id="@+id/k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:inputType="number"
+            android:hint="K"
+            android:layout_marginTop="16dp" />
+
+        <RadioButton
+            android:id="@+id/decision_tree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decision Tree" />
+
+        <RadioButton
+            android:id="@+id/bayes_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayes Network" />
+
+
+
+
+    </RadioGroup>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/submitML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:text="Evaluate Metrics" />
+
+        <Button
+            android:id="@+id/clearML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:text="Clear" />
+
+    </GridLayout>
+</RelativeLayout>
